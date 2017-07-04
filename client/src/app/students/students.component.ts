@@ -18,7 +18,6 @@ export class StudentsComponent implements OnInit {
    phone: String,
    email: String,
    };
-  label = 'test';
   constructor(private studentService: StudentService) {     this.refresh(); }
 
   refresh() {
@@ -45,6 +44,7 @@ export class StudentsComponent implements OnInit {
         this.studentService.getstudents()
           .subscribe( students =>
             this.students = students);
+        this.refresh();
       });
 
   }

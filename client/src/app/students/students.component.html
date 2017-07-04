@@ -3,23 +3,23 @@
   <form (submit)="addstudent()">
     <div class="form-group">
       <label>Roll Number</label>
-      <input type="text" [(ngModel)]="studentinfo.roll_no" placeholder={{label}} name="roll_no" class="form-control">
+      <input type="text" [(ngModel)]="studentinfo.roll_no" placeholder="Enter Roll Number Here" name="roll_no" class="form-control">
     </div>
     <div class="form-group">
       <label>First Name</label>
-      <input type="text" [(ngModel)]="studentinfo.first_name" placeholder={{label}} name="first_name" class="form-control">
+      <input type="text" [(ngModel)]="studentinfo.first_name" placeholder="Enter Your First Name" name="first_name" class="form-control">
     </div>
     <div class="form-group">
       <label>Last Name</label>
-      <input type="text" [(ngModel)]="studentinfo.last_name" name="last_name" class="form-control">
+      <input type="text" [(ngModel)]="studentinfo.last_name" placeholder="Enter Your Last Name" name="last_name" class="form-control">
     </div>
     <div class="form-group">
       <label>Phone Number</label>
-      <input type="text" [(ngModel)]="studentinfo.phone" name="phone" class="form-control" required>
+      <input type="text" [(ngModel)]="studentinfo.phone" placeholder="Enter Your Phone Number" name="phone" class="form-control" required>
     </div>
     <div class="form-group">
       <label>Email</label>
-      <input type="text" [(ngModel)]="studentinfo.email" placeholder={{label}} name="email" class="form-control">
+      <input type="text" [(ngModel)]="studentinfo.email" placeholder="Enter Your Email Address" name="email" class="form-control">
     </div>
     <input type="submit" class="btn btn btn-success" value="Add">
     <input type="button" class="btn btn-info" (click)="update()" value="Update">
