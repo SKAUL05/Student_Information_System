@@ -7,8 +7,9 @@ var mongoose = require('mongoose');
 var bodyparser = require('body-parser');
 var cors = require('cors');
 var path = require('path');
-
+var session = require('express-session');
 var app = express();
+app.use(session({secret:'SARATH'}));
 
 const route = require('./routes/route');
 
@@ -52,3 +53,5 @@ app.get('/',(req,res)=>{
 app.listen(port,()=>{
     console.log('Server started at port:'+port);
 });
+
+

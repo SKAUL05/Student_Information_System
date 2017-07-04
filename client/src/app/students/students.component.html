@@ -1,5 +1,5 @@
 <div class="container">
-  <h2 class="page-header"> Student Information Center</h2>
+  <h2 class="page-header"> Student Information Center Welcomes {{id}}</h2>
   <form (submit)="addstudent()">
     <div class="form-group">
       <label>Roll Number</label>
@@ -23,6 +23,7 @@
     </div>
     <input type="submit" class="btn btn btn-success" value="Add">
     <input type="button" class="btn btn-info" (click)="update()" value="Update">
+    <input type="button" class="btn btn-info" (click)="logout()" value="Logout">
   </form>
 </div>
 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {StudentService} from '../student.service';
 import {student} from '../student';
+import {ActivatedRoute, Params, Router} from "@angular/router";
 
 @Component({
   selector: 'app-students',
@@ -18,11 +19,14 @@ export class StudentsComponent implements OnInit {
    phone: String,
    email: String,
    };
-  constructor(private studentService: StudentService) {     this.refresh(); }
+   id: string;
+  constructor(private studentService: StudentService, private route: Router, private route2: ActivatedRoute) {     this.refresh(); }
 
   refresh() {
+    this.route2.params.subscribe((param: Params) => {
+      this.id = param['id'];
+    });
     this.studentService.getService().subscribe(res => {
-
       this.students = res ;
       console.log(this.students);
        this.studentinfo.roll_no = this.studentinfo.first_name = this.studentinfo.last_name = null;
@@ -85,7 +89,12 @@ export class StudentsComponent implements OnInit {
       .subscribe( students =>
         this.students = students);
   }
-
+logout() {
+  this.studentService.logoutService().subscribe(res => {
+    console.log('data to be edited is' + res);
+    this.route.navigate(['']);
+  });
+}
   ngOnInit() {
     this.getstudents();
   }

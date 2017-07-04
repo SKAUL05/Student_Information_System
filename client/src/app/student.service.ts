@@ -41,5 +41,14 @@ export class StudentService {
     console.log('http service started..');
     return this.http.get('http://localhost:3000/api/student/').map(res => res.json());
   }
+  loginService(login: object) {
+    console.log(login);
+    return this.http.post('http://localhost:3000/api/logindata', login).map(res => res.json());
+  }
+  logoutService() {
+    console.log('logout');
+    return this.http.get('http://localhost:3000/api/logout').map(res => res.json());
+  }
+
 
 }

@@ -1,0 +1,22 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://bootswatch.com/simplex/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+  <h2>Sign In</h2>
+
+  <label>Username :{{stat}}</label>
+  <input type="text" class="form-control" [(ngModel)]="login.username">
+  <label>Password :</label>
+  <input type="text" class="form-control" [(ngModel)]="login.password">
+  <br>
+  <button class="btn btn-primary" (click)="submit()">Login</button>
+
+
+</div>
+</body>
+</html>
+
+
+
