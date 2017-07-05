@@ -14,7 +14,7 @@ export class StudentService {
 
   // add student info method
   addstudent(newstudent) {
-    var headers = new Headers();
+    const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     return this.http.post('http://localhost:3000/api/student', newstudent, {headers: headers})
       .map(res => res.json());
@@ -27,13 +27,13 @@ export class StudentService {
   }
 
   update(id, upDatedContact) {
-    var headers = new Headers();
+    const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     console.log('in update' + id);
     return this.http.put('http://localhost:3000/api/student/' + id, upDatedContact, headers).map(res => res.json());
   }
   editstudent(id) {
-    var headers = new Headers();
+    const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     return this.http.get('http://localhost:3000/api/student/' + id).map(res => res.json());
   }
