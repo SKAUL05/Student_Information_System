@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { StudentService } from '../student.service';
 import {Router} from '@angular/router';
-
+import {FlashMessagesService} from 'angular2-flash-messages';
 
 @Component({
   selector: 'app-signin',
@@ -12,7 +12,7 @@ import {Router} from '@angular/router';
 export class SigninComponent implements OnInit {
   login = {username: String, password: String};
   stat = '';
-  constructor(private httpservice: StudentService, private route: Router) {
+  constructor(private httpservice: StudentService, private route: Router, private flashmessage: FlashMessagesService) {
     this.login.username = this.login.password = null;
   }
 
@@ -21,7 +21,11 @@ export class SigninComponent implements OnInit {
   submit() {
     this.httpservice.loginService(this.login).subscribe(res => {
       console.log(res);
-      this.route.navigate(['/students/' + res.username]);
+      if (res.flag) {
+        this.route.navigate(['/students/' + res.username]);
+      } else {
+        this.flashmessage.show('Invalid Credentials',{cssClass: 'alert-danger', timeout: 3000});
+      }
     });
   }
 }

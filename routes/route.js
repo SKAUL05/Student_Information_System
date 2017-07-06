@@ -93,7 +93,7 @@ router.put('/student/:id', (req, res, next) => {
 
     router.post('/logindata',function(req, res){
 
-        student1.findOne({userid:req.body.username,password:req.body.password},function(err,docs){
+        student1.findOne({$and:[{userid:req.body.username},{password:req.body.password}]},function(err,docs){
             if(err || !docs) {
                 res.json({flag:false});
             }
@@ -101,7 +101,7 @@ router.put('/student/:id', (req, res, next) => {
                 sess = req.session;
                 sess.username = req.body.username;
                 console.log(sess);
-                res.json(sess);
+                res.json({flag:true,user:sess.username});
             }
         });
 

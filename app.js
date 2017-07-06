@@ -49,7 +49,6 @@ app.get('/',(req,res)=>{
     res.send('Student');
 });
 
-
 app.listen(port,()=>{
     console.log('Server started at port:'+port);
 });
