@@ -4,7 +4,13 @@
   "description": "a simple student application system",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "githubpage": "ng build --outputPath=docs --base-href=https://skaul05.github.io/Student_Information_System/"
   },
   "author": "SARATH KAUL",
   "license": "ISC",
