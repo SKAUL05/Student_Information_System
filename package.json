@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "pushd client && ng serve && popd",
+    "build": "pushd angular-src && ng build && popd",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -15,30 +15,38 @@
   "author": "SARATH KAUL",
   "license": "ISC",
   "dependencies": {
-    "@angular/cli": "^7.1.4",
-"@angular/compiler-cli": "~7.0.0",
-"@angular/animations": "~7.0.0",
-"@angular/common": "~7.0.0",
-"@angular/compiler": "~7.0.0",
-"@angular/core": "~7.0.0",
-"@angular/forms": "~7.0.0",
-"@angular/http": "~7.0.0",
-"@angular-devkit/build-angular": "^0.13.1",
-"@angular/platform-browser": "~7.0.0",
-"@angular/platform-browser-dynamic": "~7.0.0",
-"@angular/router": "~7.0.0",
-"@angular/language-service": "~7.0.0",
-"core-js": "^2.5.4",
-"json": "^9.0.6",
-"rxjs": "~6.3.3",
-"zone.js": "~0.8.26",
+    "@angular/cli": "^9.1.7",
+    "@angular/compiler-cli": "~9.1.9",
+    "@angular/animations": "~9.1.9",
+    "@angular/common": "~9.1.9",
+    "@angular/compiler": "~9.1.9",
+    "@angular/core": "~9.1.9",
+    "@angular/forms": "~9.1.9",
+    "@angular/http": "~7.2.16",
+    "@angular-devkit/build-angular": "^0.901.7",
+    "@angular/platform-browser": "~9.1.9",
+    "@angular/platform-browser-dynamic": "~9.1.9",
+    "@angular/router": "~9.1.9",
+    "@angular/language-service": "~9.1.9",
+    "core-js": "^3.6.5",
+    "json": "^9.0.6",
+    "rxjs": "~6.5.5",
+    "zone.js": "~0.10.3",
     "body-parser": "^1.17.2",
     "cors": "^2.8.3",
     "express": "^4.15.3",
-    "mongoose": "^4.11.1"
+    "mongoose": "^5.9.16"
   },
   "engines": {
-  "node": "10.15.1",
-  "npm": "6.4.1"
-}
+    "node": "10.15.1",
+    "npm": "6.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SKAUL05/Student_Information_System.git"
+  },
+  "bugs": {
+    "url": "https://github.com/SKAUL05/Student_Information_System/issues"
+  },
+  "homepage": "https://github.com/SKAUL05/Student_Information_System#readme"
 }
