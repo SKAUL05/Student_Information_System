@@ -5,8 +5,8 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "start": "pushd client && ng serve && popd",
-    "build": "pushd client && ng build && popd",
+    "start": "npm run  serve --prefix client/",
+    "build": "npm run  build --prefix client/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
