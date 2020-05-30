@@ -6,7 +6,7 @@
   "scripts": {
     "ng": "ng",
     "start": "pushd client && ng serve && popd",
-    "build": "pushd angular-src && ng build && popd",
+    "build": "pushd client && ng build && popd",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
