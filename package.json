@@ -6,7 +6,8 @@
   "scripts": {
     "ng": "ng",
     "heroku-postbuild": "cd client/ && npm install",
-    "start": "cd client/ && ng serve",
+    "postinstall": "cd client/ && ng build --aot -prod",
+    "start": "pwd && cd client/ && ng serve",
     "build": "cd client/ && ng build",
     "test": "ng test",
     "lint": "ng lint",
