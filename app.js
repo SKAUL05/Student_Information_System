@@ -14,7 +14,7 @@ app.use(session({secret:'SARATH'}));
 const route = require('./routes/route');
 
 //connect to mongodb
-mongoose.connect('mongodb://localhost:27017/SIS');
+mongoose.connect(process.env.mongodb_uri || 'mongodb://localhost:27017/SIS');
 
 //on connection
 mongoose.connection.on('connected',()=>{
