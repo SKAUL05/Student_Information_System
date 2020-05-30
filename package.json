@@ -6,8 +6,8 @@
   "scripts": {
     "ng": "ng",
     "heroku-postbuild": "cd client/ && npm install",
-    "start": "npm run  serve --prefix client/",
-    "build": "npm run  build --prefix client/",
+    "start": "cd client/ && ng serve",
+    "build": "cd client/ && ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
