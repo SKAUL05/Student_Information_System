@@ -291,43 +291,43 @@ var StudentService = (function () {
         this.http = http;
     }
     StudentService.prototype.getstudents = function () {
-        return this.http.get('http://localhost:3000/api/student')
+        return this.http.get('/api/student')
             .map(function (res) { return res.json(); });
     };
     // add student info method
     StudentService.prototype.addstudent = function (newstudent) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.post('http://localhost:3000/api/student', newstudent, { headers: headers })
+        return this.http.post('/api/student', newstudent, { headers: headers })
             .map(function (res) { return res.json(); });
     };
     // deleting student information
     StudentService.prototype.deletestudent = function (id) {
-        return this.http.delete('http://localhost:3000/api/student/' + id)
+        return this.http.delete('/api/student/' + id)
             .map(function (res) { return res.json(); });
     };
     StudentService.prototype.update = function (id, upDatedContact) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
         console.log('in update' + id);
-        return this.http.put('http://localhost:3000/api/student/' + id, upDatedContact, headers).map(function (res) { return res.json(); });
+        return this.http.put('/api/student/' + id, upDatedContact, headers).map(function (res) { return res.json(); });
     };
     StudentService.prototype.editstudent = function (id) {
         var headers = new __WEBPACK_IMPORTED_MODULE_1__angular_http__["b" /* Headers */]();
         headers.append('Content-Type', 'application/json');
-        return this.http.get('http://localhost:3000/api/student/' + id).map(function (res) { return res.json(); });
+        return this.http.get('/api/student/' + id).map(function (res) { return res.json(); });
     };
     StudentService.prototype.getService = function () {
         console.log('http service started..');
-        return this.http.get('http://localhost:3000/api/student/').map(function (res) { return res.json(); });
+        return this.http.get('/api/student/').map(function (res) { return res.json(); });
     };
     StudentService.prototype.loginService = function (login) {
-        console.log(login);
-        return this.http.post('http://localhost:3000/api/logindata', login).map(function (res) { return res.json(); });
+        console.log("login");
+        return this.http.post('/api/logindata', login).map(function (res) { return res.json(); });
     };
     StudentService.prototype.logoutService = function () {
         console.log('logout');
-        return this.http.get('http://localhost:3000/api/logout').map(function (res) { return res.json(); });
+        return this.http.get('0/api/logout').map(function (res) { return res.json(); });
     };
     return StudentService;
 }());
