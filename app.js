@@ -14,7 +14,7 @@ app.use(session({secret:'SARATH'}));
 const route = require('./routes/route');
 
 //connect to mongodb
-mongoose.connect("mongodb+srv://skaul05:kL1032V0o4270O8l@cluster0-rs7nr.gcp.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true});
+mongoose.connect("mongodb://ubkonhqothlqzmk00mla:xYwwxOnnL5AyvIFdp6nA@bamoc2kdggqdazj-mongodb.services.clever-cloud.com:27017/bamoc2kdggqdazj",{useNewUrlParser: true});
 
 //on connection
 mongoose.connection.on('connected',()=>{
