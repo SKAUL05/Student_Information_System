@@ -8,7 +8,7 @@ export class StudentService {
 
   constructor(private http: Http) { }
   getstudents() {
-    return this.http.get('http://localhost:3000/api/student')
+    return this.http.get('/api/student')
       .map(res => res.json());
   }
 
@@ -16,13 +16,13 @@ export class StudentService {
   addstudent(newstudent) {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.post('http://localhost:3000/api/student', newstudent, {headers: headers})
+    return this.http.post('/api/student', newstudent, {headers: headers})
       .map(res => res.json());
   }
 
   // deleting student information
   deletestudent(id) {
-    return this.http.delete('http://localhost:3000/api/student/' + id)
+    return this.http.delete('/api/student/' + id)
       .map(res => res.json());
   }
 
@@ -30,24 +30,24 @@ export class StudentService {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
     console.log('in update' + id);
-    return this.http.put('http://localhost:3000/api/student/' + id, upDatedContact, headers).map(res => res.json());
+    return this.http.put('/api/student/' + id, upDatedContact, headers).map(res => res.json());
   }
   editstudent(id) {
     const headers = new Headers();
     headers.append('Content-Type', 'application/json');
-    return this.http.get('http://localhost:3000/api/student/' + id).map(res => res.json());
+    return this.http.get('/api/student/' + id).map(res => res.json());
   }
   getService() {
     console.log('http service started..');
-    return this.http.get('http://localhost:3000/api/student/').map(res => res.json());
+    return this.http.get('/api/student/').map(res => res.json());
   }
   loginService(login: object) {
-    console.log(login);
-    return this.http.post('http://localhost:3000/api/logindata', login).map(res => res.json());
+    console.log("login");
+    return this.http.post('/api/logindata', login).map(res => res.json());
   }
   logoutService() {
     console.log('logout');
-    return this.http.get('http://localhost:3000/api/logout').map(res => res.json());
+    return this.http.get('0/api/logout').map(res => res.json());
   }
 
 

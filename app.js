@@ -14,7 +14,7 @@ app.use(session({secret:'SARATH'}));
 const route = require('./routes/route');
 
 //connect to mongodb
-mongoose.connect("mongodb://ubkonhqothlqzmk00mla:xYwwxOnnL5AyvIFdp6nA@bamoc2kdggqdazj-mongodb.services.clever-cloud.com:27017/bamoc2kdggqdazj",{useNewUrlParser: true});
+mongoose.connect(process.env.MONGODB_URI,{useNewUrlParser: true});
 
 //on connection
 mongoose.connection.on('connected',()=>{
