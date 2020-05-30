@@ -5,7 +5,7 @@
   "main": "app.js",
   "scripts": {
     "ng": "ng",
-    "heroku-postbuild": "cd client/ && npm install && cd.. && npm install",
+    "heroku-postbuild": "cd client/ && npm install && cd .. && npm install",
     "start": "node app.js",
     "build": "ng build",
     "test": "ng test",
