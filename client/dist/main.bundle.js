@@ -241,7 +241,7 @@ var SigninComponent = (function () {
         this.httpservice.loginService(this.login).subscribe(function (res) {
             console.log(res);
             if (res.flag) {
-                _this.route.navigate(['/students/' + res.username]);
+                _this.route.navigate(['/students/' + res.user]);
             }
             else {
                 _this.flashmessage.show('Invalid Credentials', { cssClass: 'alert-danger', timeout: 3000 });
@@ -327,7 +327,7 @@ var StudentService = (function () {
     };
     StudentService.prototype.logoutService = function () {
         console.log('logout');
-        return this.http.get('0/api/logout').map(function (res) { return res.json(); });
+        return this.http.get('/api/logout').map(function (res) { return res.json(); });
     };
     return StudentService;
 }());
