@@ -47,7 +47,7 @@ export class StudentService {
   }
   logoutService() {
     console.log('logout');
-    return this.http.get('0/api/logout').map(res => res.json());
+    return this.http.get('/api/logout').map(res => res.json());
   }
 
 

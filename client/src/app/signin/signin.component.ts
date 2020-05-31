@@ -22,7 +22,7 @@ export class SigninComponent implements OnInit {
     this.httpservice.loginService(this.login).subscribe(res => {
       console.log(res);
       if (res.flag) {
-        this.route.navigate(['/students/' + res.username]);
+        this.route.navigate(['/students/' + res.user]);
       } else {
         this.flashmessage.show('Invalid Credentials',{cssClass: 'alert-danger', timeout: 3000});
       }
