@@ -12,21 +12,23 @@
   <a href="https://github.com/SKAUL05/Student_Information_System/blob/master/licence.md" target="_blank">
     <img alt="License: MIT" src="https://img.shields.io/github/license/SKAUL05/Student_Information_System" />
   </a>
-  <a href="https://twitter.com/skaul05" target="_blank">
-    <img alt="Twitter: skaul05" src="https://img.shields.io/twitter/follow/skaul05.svg?style=social" />
-  </a>
+  
 </p>
 
 > A basic MEAN application used to store data of students.
 
-### 🏠 [Homepage](https://skaul05-sis.herokuapp.com)
 
-### ✨ [Demo](https://skaul05-sis.herokuapp.com)
+### ✨ [Demo](https://skaul05-sis.herokuapp.com) 
+![Website](https://img.shields.io/website?down_color=down&down_message=offline&style=plastic&up_color=green&up_message=up&url=https%3A%2F%2Fskaul05-tictactoe.herokuapp.com)
+
 
 ## Prerequisites
 
 - node 10.15.1
 - npm 6.4.1
+- angular-cli
+- mongoose
+- express
 
 ## Install
 
@@ -36,24 +38,24 @@ npm install
 
 ## Usage
 
+#### To run backend
 ```sh
 node app.js
 ```
-
-## Run tests
+#### To run frontend
 
 ```sh
-npm run test
+cd client && ng serve
 ```
+
 
 ## Author
 
-👤 **Sarath Kaul**
+👤 **Sarath Kaul** <br>
+![GitHub followers](https://img.shields.io/github/followers/SKAUL05?style=social) [![LinkedIn](https://img.shields.io/static/v1.svg?label=connect&message=@skaul05&color=success&logo=linkedin&style=flat&logoColor=white&colorA=blue)](https://www.linkedin.com/in/skaul05/) [![GMAIL](https://img.shields.io/static/v1.svg?label=send&message=kaul.sarath@gmail.com&color=red&logo=gmail&style=social)](mailto:kaul.sarath@gmail.com?subject=Hello)
 
-* Website: https://skaul05.netlify.com/
-* Twitter: [@skaul05](https://twitter.com/skaul05)
-* Github: [@SKAUL05](https://github.com/SKAUL05)
-* LinkedIn: [@skaul05](https://linkedin.com/in/skaul05)
+👤 **Tirth Kelawala** <br>
+![Github](https://img.shields.io/github/followers/coder2033?style=social)
 
 ## 🤝 Contributing
 
