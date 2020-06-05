@@ -59,7 +59,7 @@ cd client && ng serve
 
 ## 🤝 Contributing
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/SKAUL05/Student_Information_System/issues). You can also take a look at the [contributing guide](https://github.com/SKAUL05/Student_Information_System/blob/master/CONTRIBUTING.md).
+Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/SKAUL05/Student_Information_System/issues). 
 
 ## Show your support
 
