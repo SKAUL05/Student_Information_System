@@ -10,7 +10,7 @@
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/SKAUL05/Student_Information_System/blob/master/licence.md" target="_blank">
-    <img alt="License: MIT" src="https://img.shields.io/github/license/SKAUL05/Student Information System" />
+    <img alt="License: MIT" src="https://img.shields.io/github/license/SKAUL05/Student_Information_System" />
   </a>
   <a href="https://twitter.com/skaul05" target="_blank">
     <img alt="Twitter: skaul05" src="https://img.shields.io/twitter/follow/skaul05.svg?style=social" />
