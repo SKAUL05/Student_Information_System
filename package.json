@@ -24,7 +24,7 @@
     "@angular/core": "~9.1.9",
     "@angular/forms": "~9.1.9",
     "@angular/http": "~7.2.16",
-    "@angular-devkit/build-angular": "^0.901.7",
+    "@angular-devkit/build-angular": "^15.2.4",
     "@angular/platform-browser": "~9.1.9",
     "@angular/platform-browser-dynamic": "~9.1.9",
     "@angular/router": "~9.1.9",
